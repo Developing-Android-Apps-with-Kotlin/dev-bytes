@@ -12,7 +12,7 @@ import androidx.room.RoomDatabase
 
 @Dao
 interface VideoDao {
-    @Query("SELECT * FROM databasevideo")
+    @Query("SELECT * FROM DatabaseVideo")
     fun getVideos(): LiveData<List<DatabaseVideo>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
