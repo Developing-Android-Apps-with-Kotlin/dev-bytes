@@ -9,16 +9,16 @@ import se.stylianosgakis.devbytes.util.smartTruncate
  * @see database for objects that are mapped to the database
  * @see network for objects that parse or prepare network calls
  */
-
 /**
  * Videos represent a devbyte that can be played.
  */
-data class Video(val title: String,
-                 val description: String,
-                 val url: String,
-                 val updated: String,
-                 val thumbnail: String) {
-
+data class Video(
+    val url: String,
+    val updated: String,
+    val title: String,
+    val description: String,
+    val thumbnail: String
+) {
     /**
      * Short description is used for displaying truncated descriptions in the UI
      */
